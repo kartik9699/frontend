@@ -10,7 +10,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/api/Loginuser', {
+            const response = await fetch('https://backend-pearl-tau.vercel.app/api/Loginuser', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
