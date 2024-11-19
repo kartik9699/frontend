@@ -17,7 +17,7 @@ function Home() {
 
   const loadData = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/DisplayData", {
+      const res = await fetch("https://backend-pearl-tau.vercel.app/api/DisplayData", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ category: "All" })
